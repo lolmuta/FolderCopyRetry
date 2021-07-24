@@ -19,6 +19,7 @@ namespace CopyFolderRetry
                 string src = @"\\192.169.0.1\b";
                 FileUtil.CopyFolderRetry(src, dest);//複製檔案
                 Console.WriteLine("更新db 狀態為成功...");
+                Console.WriteLine($"刪除{dest}");
             }
             catch (Exception ex)
             {
